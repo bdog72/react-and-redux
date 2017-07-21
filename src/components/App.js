@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import routes from './ReactRoute'
 class App extends Component {
   render () {
     return <div>
-      <h1>What up Dog</h1>
+      { routes }
     </div>
   }
 }
