@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import routes from './ReactRoute'
+import ReactRoute from './ReactRoute'
 class App extends Component {
   render () {
     return <div>
-      { routes }
+      <ReactRoute />
     </div>
   }
 }
