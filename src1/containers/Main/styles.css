@@ -1,0 +1,8 @@
+.mainContainer {
+  width: 100%;
+
+  .mainInnerContainer {
+    max-width: 900px;
+    margin: 0;
+  }
+}

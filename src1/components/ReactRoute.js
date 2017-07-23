@@ -12,6 +12,9 @@ export default class ReactRoute extends Component {
           <Route path='/homecontainer' component={HomeContainer} />
         </div>
       </Router>
+      // {/* <Router path='/' component={MainContainer}>
+      // //   <Route path='/homecontainer' component={HomeContainer} />
+      // // </Router> */}
     )
   }
 }

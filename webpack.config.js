@@ -67,6 +67,9 @@ const common = {
         'sass-loader'
       ]
     }]
+  },
+  resolve: {
+    root: path.resolve('./src')
   }
 }
 
@@ -113,7 +116,7 @@ const production = {
 
 module.exports = merge.smart(
   process.env.npm_lifecycle_event === 'build'
-  ? production
-  : development,
+    ? production
+    : development,
   common
 )
