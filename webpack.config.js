@@ -67,9 +67,6 @@ const common = {
         'sass-loader'
       ]
     }]
-  },
-  resolve: {
-    root: path.resolve('./src')
   }
 }
 
