@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Home from './Home/Home'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Navigation from './Nav/Navigation'
+import Authenticate from './Authenticate'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 export default class App extends Component {
   render () {
     return (
@@ -12,14 +14,15 @@ export default class App extends Component {
 const RRouter = () => (
   <Router>
     <div>
-      <ul>
+      <Navigation isAuthed />
+      {/* <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/topics'>Topics</Link></li>
-      </ul>
+      </ul> */}
       <hr />
       <Route exact path='/' component={HomeP} />
-      <Route path='/about' component={About} />
+      <Route path='/auth' component={AuthenticateP} />
       <Route path='/topics' component={Topics} />
     </div>
   </Router>
@@ -30,9 +33,9 @@ const HomeP = () => (
     <Home />
   </div>
 )
-const About = () => (
+const AuthenticateP = () => (
   <div>
-    <h2>About</h2>
+    <Authenticate />
   </div>
 )
 const Topics = () => (
