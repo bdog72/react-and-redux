@@ -18,7 +18,7 @@ import './nav.scss'
 function NavLinks ({isAuthed}) {
   return isAuthed === true
     ? <ul>
-      <li><Link to='/' className='link'>{'Home'}</Link></li>
+      <li><Link to='/' className='link'>{'HomeBoy'}</Link></li>
     </ul>
     : null
 }
