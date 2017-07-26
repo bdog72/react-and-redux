@@ -13,6 +13,7 @@ export default class SearchBar extends Component {
     return (
       <div>
         <input
+          className='glyphicon glyphicon-search'
           value={this.state.term}
           onChange={(e) => this.setState({ term: e.target.value })}
         />
