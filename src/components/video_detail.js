@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/_responsive-embed.scss'
 const VideoDetail = ({video}) => {
   if (!video) {
     return <div>Loading...</div>

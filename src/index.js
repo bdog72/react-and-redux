@@ -4,9 +4,9 @@ import { AppContainer } from 'react-hot-loader'
 import Redbox from 'redbox-react'
 import App from './components/App'
 
-import './styles/bootstrap.css'
 import './styles/_responsive-embed.scss'
 import './styles/screen.scss'
+import './styles/bootstrap.css'
 const root = document.getElementById('root')
 
 const render = app => {
